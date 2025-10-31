@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import StartingLogo from "./components/StartingLogo.jsx"
 
 function App() {
   return (
-     <h1>Hello World</h1>
+     <StartingLogo></StartingLogo>
   );
 }
 
