@@ -19,8 +19,29 @@ code {
 }
 
 .startinglogo {
-  font-size: 4rem;
-  cursor: none;
+  cursor: default;
+  animation-duration: 3s;
+  animation-name: zoom;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom {
+  0% {
+    scale: 0%;
+    opacity: 100;
+  }
+  25% {
+    opacity: 100;
+  }
+  50% {
+    opacity: 100;
+  }
+  75% {
+    opacity: 100;
+  }
+  100% {
+    scale: 300%;
+    opacity: 0;
+  }
 }
 
 .startinglogo span:nth-child(odd){
