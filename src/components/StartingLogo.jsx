@@ -1,10 +1,11 @@
 import React from "react";
 
 function StartingLogo(){
+    
     return (
         <h1 className="startinglogo">
-            <span>Quote</span>
-            <span>Forge</span>
+            <span className="purpletext">Quote</span>
+            <span className="redtext">Forge</span>
         </h1>
     );
 }
