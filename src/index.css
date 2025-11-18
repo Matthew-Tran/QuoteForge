@@ -89,6 +89,8 @@ code {
   padding-left: 10px;
   border-radius: 10px;
   border: none;
+  font-family: "Stack Sans Headline", sans-serif;
+
  }
 
  #prompt:hover {
@@ -102,14 +104,16 @@ code {
 
  button#search, button#lucky {
    display: block;
+   font-family: "Stack Sans Headline", sans-serif;
    padding: 10px 20px;
    border-radius: 10px;
    border: 1px solid transparent;
+   font-weight: bold;
  }
 
  #submitbtns button:hover {
   background-color: lightgray;
-  border: 1px red solid;
+  border: 1px black solid;
  }
 
  div#submitbtns{

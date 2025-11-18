@@ -22,7 +22,6 @@ function App() {
     return () => clearTimeout(timer);
   } 
   , [logoVisible])
-  
   return (
       <> 
         <StartingLogo />
@@ -30,6 +29,7 @@ function App() {
       </>
   );
 }
+
 
 export default App;
 
