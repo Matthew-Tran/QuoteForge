@@ -9,19 +9,20 @@ function QuotePrompt(){
         const entry = formData.get("prompt");
         setEntry(oldEntry => entry);
     }
-    let myAPIkey = process.env.APIkey
-    console.log(myAPIkey)
+
+    const fetchAPI = async () => {
+        try {
+            const response = await axios.get("http://127.0.0.1:8080/quotes/" + entry)
+            console.log(response.data.quote, response.data.author)
+            setEntry(oldEntry => "")
+        } catch (err){
+            console.error(err)
+        }
+    }
     React.useEffect(() => {
-        const options = {
-            method: "GET",
-            url: "http://localhost:8000/quotes",
-            params: {categories: entry}
-        }   
-            axios.request(options).then((response) => {
-                console.log(response.data[0].quote)
-            }).catch(err => {
-                console.error(err)
-            })
+        if (entry !== ""){
+            fetchAPI()
+        }
     }, [entry])
  
 
