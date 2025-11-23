@@ -12,7 +12,7 @@ function QuotePrompt(){
 
     const fetchAPI = async () => {
         try {
-            const response = await axios.get("localhost:8080/quotes/" + entry)
+            const response = await axios.get("http://127.0.0.1:8080/quotes/" + entry)
             console.log(response.data.quote, response.data.author)
             alert(response.data.quote)
             setEntry(oldEntry => "")
