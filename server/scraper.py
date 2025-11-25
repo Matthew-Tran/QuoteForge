@@ -7,7 +7,9 @@ import random
 
 
 app = Flask(__name__)
+
 cors = CORS(app, origins='*')
+
 
 @app.route("/quotes/<query>")
 
